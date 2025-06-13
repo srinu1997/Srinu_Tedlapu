@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srinu Tedlapu | Network Security Specialist</title>
+    <title>Srinu Tedlapu | Cybersecurity & Network Security Specialist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -41,7 +41,7 @@
         }
 
         section {
-            padding: 6rem 0;
+            padding: 8rem 0;
         }
 
         .section-title {
@@ -107,7 +107,7 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             padding: 1rem 0;
@@ -117,6 +117,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
         }
 
         .logo {
@@ -247,6 +250,7 @@
             position: relative;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         .hero-blob {
@@ -258,6 +262,17 @@
             box-shadow: var(--shadow);
             overflow: hidden;
             position: relative;
+            animation: morph 8s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
             animation: morph 8s ease-in-out infinite;
         }
 
@@ -374,6 +389,68 @@
             font-size: 1.5rem;
             color: var(--primary);
             margin-right: 1rem;
+        }
+
+        /* Certifications Section */
+        .certifications {
+            background: white;
+        }
+
+        .certs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .cert-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cert-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .cert-icon i {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+
+        .cert-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .cert-issuer {
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        .cert-date {
+            color: var(--primary);
+            font-weight: 500;
         }
 
         /* Experience Section */
@@ -658,6 +735,10 @@
             .timeline-item::after {
                 left: 21px !important;
             }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 768px) {
@@ -711,8 +792,16 @@
                 flex-direction: column;
             }
             
-            .section {
-                padding: 4rem 0;
+            section {
+                padding: 5rem 0;
+            }
+            
+            .hero-title {
+                font-size: 2.25rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
             }
         }
     </style>
@@ -731,6 +820,7 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -741,23 +831,23 @@
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h2 class="hero-subtitle">Network Security Specialist</h2>
+                <h2 class="hero-subtitle">Cybersecurity & Network Security Specialist</h2>
                 <h1 class="hero-title">Srinu <span>Tedlapu</span></h1>
                 <p class="hero-description">
-                    Freelance expert in troubleshooting networking devices and security systems. 
-                    Transitioning to full-time cybersecurity roles with strong fundamentals in 
-                    networking and security technologies.
+                    Network security expert transitioning to cybersecurity roles with 8+ years of experience in troubleshooting complex infrastructure. Passionate about building secure digital environments through technical expertise.
                 </p>
                 <div class="hero-btns">
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="#experience" class="btn btn-outline">View Experience</a>
+                    <a href="https://www.linkedin.com/in/srinu-tedlapu-130a25146" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-blob">
-                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 8rem; opacity: 0.2;">
-                        <i class="fas fa-lock"></i>
-                    </div>
+                    <!-- Replace with your actual photo URL -->
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQHjHzR1VhxySg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1685887228961?e=1755129600&v=beta&t=UJbKD94tOJ-W9ltRd6HM7SzS4iZ2eWr2HurHAT-Hcac" 
+                         alt="Srinu Tedlapu" class="profile-image">
                 </div>
             </div>
         </div>
@@ -970,6 +1060,45 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="cert-title">CompTIA Security+</h3>
+                    <p class="cert-issuer">CompTIA</p>
+                    <p class="cert-date">In Progress</p>
+                    <a href="https://keep.google.com/#NOTE/1slVL38e1212ZyN92VeQuI1Reu4QSneORqwlWlGSQ-maXpFaUG2YVTNVRVkEac1s2Amj7" 
+                       target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                        View Details
+                    </a>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="cert-title">Cisco Certified Network Associate</h3>
+                    <p class="cert-issuer">Cisco</p>
+                    <p class="cert-date">2023</p>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="cert-title">Certified Ethical Hacker</h3>
+                    <p class="cert-issuer">EC-Council</p>
+                    <p class="cert-date">2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
@@ -1040,7 +1169,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="contact-text">
                                 <h4>Location</h4>
-                                <p>Visakhapatnam,India</p>
+                                <p>Visakhapatnam, India</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1050,25 +1179,32 @@
                                 <p>+91 9642491820</p>
                             </div>
                         </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/srinu-tedlapu-130a25146</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Enter your name">
+                            <input type="text" id="name" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="Enter your email">
+                            <input type="email" id="email" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" placeholder="What is this regarding?">
+                            <input type="text" id="subject" placeholder="Job opportunity/Project inquiry" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" placeholder="Enter your message"></textarea>
+                            <textarea id="message" placeholder="Enter your message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -1089,10 +1225,15 @@
                         infrastructure with a passion for protecting digital assets.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/srinu-tedlapu-130a25146" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:srinu3090@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/Srinu1997" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-links-col">
@@ -1100,6 +1241,7 @@
                     <ul class="footer-links">
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -1107,11 +1249,11 @@
                 <div class="footer-links-col">
                     <h4 class="footer-title">Expertise Areas</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Network Troubleshooting</a></li>
-                        <li><a href="#">Security Surveillance</a></li>
-                        <li><a href="#">Alarm Systems</a></li>
-                        <li><a href="#">Home Automation</a></li>
+                        <li><a href="#">Network Security</a></li>
                         <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Threat Analysis</a></li>
+                        <li><a href="#">Network Infrastructure</a></li>
+                        <li><a href="#">Security Systems</a></li>
                     </ul>
                 </div>
             </div>
@@ -1159,6 +1301,23 @@
             } else {
                 header.style.boxShadow = 'none';
             }
+        });
+        
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // In a real implementation, you would send this data to a server
+            console.log('Form submitted:', formData);
+            
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
         });
     </script>
 </body>
